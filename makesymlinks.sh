@@ -9,7 +9,7 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old$$             # old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files=""
+files="Xresources Xresources.d config/dunst config/i3 config/openbox config/ranger config/tint2 vim vimrc config/zathura zshrc"
 
 ##########
 
@@ -23,12 +23,10 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
-    if [ -f ~/.$file ] ; then
-        echo "Moving previous version of $file from ~ to $olddir"
-        mv ~/.$file $olddir
-    fi
+    echo "Moving any existing dotfiles from ~ to $olddir"
+    mv ~/.$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
