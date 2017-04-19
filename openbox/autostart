@@ -1,0 +1,14 @@
+lxsession &
+xcompmgr &
+tint2 &
+feh --bg-fill --randomize --no-fehbg ~/Pictures/Wallpapers/* &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+nm-applet &
+clipit -d -n &
+volumeicon &
+rofi &
+redshift &
+pcmanfm -d &
+trojita &
+pidgin &
+xautolock -locker ~/.local/bin/myi3lock -time 10 -corners ----
