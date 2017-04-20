@@ -189,9 +189,14 @@ bar {
 	#status_command python /usr/lib/python3.5/site-packages/powerline/bindings/i3/powerline-i3.py
 	#font pango:PowerlineFont 12
 	colors	{
-		background #232323
-		statusline #DCDCDC
+	background #073642
+        statusline #839496
+        #yellow focused_workspace #b58900 #b58900 #eee8d5
+        focused_workspace #2aa198 #2aa198 #eee8d5
+        active_workspace #cb4b16 #cb4b16 #93a1a1
+        inactive_workspace #586e75 #586e75 #93a1a1
     	}
+
 }
 # Shutdown menu
 set $mode_system l:Lock | e:Logout | s:Suspend | h:Hibernate | r:Reboot | Shift+s:Shutdown | Shift+h:Hybrid-sleep
