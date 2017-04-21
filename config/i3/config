@@ -181,13 +181,8 @@ exec --no-startup-id nm-applet
 # finds out, if available)
 bar {
 	font pango:DejaVu Sans Mono, Icons 9
-	#separator_symbol "::"
-	tray_output LVDS1
 	position bottom	
         status_command i3blocks
-	#i3bar_command i3bar
-	#status_command python /usr/lib/python3.5/site-packages/powerline/bindings/i3/powerline-i3.py
-	#font pango:PowerlineFont 12
 	colors	{
 	background #073642
         statusline #839496
