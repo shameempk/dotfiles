@@ -28,7 +28,7 @@ font pango:DejaVu, Icons 10
 #gaps inner 6 
 
 # Set Window border to 1 pixel
-new_window pixel 3
+new_window pixel 2
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
