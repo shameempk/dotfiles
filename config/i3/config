@@ -163,7 +163,7 @@ exec --no-startup-id xcompmgr &
 exec --no-startup-id volumeicon &
 exec --no-startup-id rofi &
 exec --no-startup-id redshift &
-exec --no-startup-id clipit -d -n
+exec --no-startup-id clipit -d -n &
 exec --no-startup-id pcmanfm -d &
 exec --no-startup-id lxsession &
 #exec --no-startup-id pidgin &
@@ -172,7 +172,7 @@ exec --no-startup-id feh --bg-fill --randomize --no-fehbg ~/Pictures/Wallpapers/
 exec --no-startup-id xautolock -locker ~/.local/bin/myi3lock -time 10 -corners ---- &
 
 #Network Manager applet
-exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet &
 
 
 
