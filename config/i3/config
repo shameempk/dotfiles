@@ -168,7 +168,8 @@ exec --no-startup-id pcmanfm -d &
 exec --no-startup-id lxsession &
 #exec --no-startup-id pidgin &
 exec --no-startup-id trojita &
-exec --no-startup-id feh --bg-fill --randomize --no-fehbg ~/Pictures/Wallpapers/* &
+#exec --no-startup-id feh --bg-fill --randomize --no-fehbg ~/Pictures/Wallpapers/* &
+exec --no-startup-id feh --bg-fill --no-fehbg ~/Dropbox/Pictures/Wallpapers/14778131579480.jpg &
 exec --no-startup-id xautolock -locker ~/.local/bin/myi3lock -time 10 -corners ---- &
 
 #Network Manager applet
