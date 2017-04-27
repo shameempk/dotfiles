@@ -9,7 +9,7 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old$$             # old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="Xresources Xresources.d config/dunst config/i3 config/i3blocks config/openbox config/ranger config/tint2 vim vimrc config/zathura zshrc"
+files="Xresources Xresources.d config/dunst config/i3 config/i3blocks config/openbox config/ranger/rc.conf config/tint2 vim vimrc config/zathura zshrc"
 
 ##########
 
