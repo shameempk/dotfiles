@@ -42,9 +42,23 @@ markup=none
 #interval=5
 #signal=10
 
-# Memory usage
+
+# Generic media player support
 #
-# The type defaults to "mem" if the instance is not specified.
+# This displays "ARTIST - SONG" if a music is playing.
+# Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
+#[mediaplayer]
+#instance=cmus
+#interval=5
+#signal=10
+
+# cmus info
+[cmus]
+command=~/.config/i3blocks/blocks/scroll $BLOCK_NAME
+label=
+markup=pango
+interval=repeat
+separator=true
 
 [cpu]
 label=CPU
@@ -52,6 +66,9 @@ label=CPU
 command=/usr/lib/i3blocks/cpu_usage -w 80 -c 90
 interval=30
 
+# Memory usage
+#
+# The type defaults to "mem" if the instance is not specified.
 [memory]
 label=MEM
 separator=true
@@ -133,14 +150,6 @@ command=date '+%H:%M %d-%m-%Y'
 interval=5
 separator=true
 
-# Generic media player support
-#
-# This displays "ARTIST - SONG" if a music is playing.
-# Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
-#[mediaplayer]
-#instance=spotify
-#interval=5
-#signal=10
 
 # OpenVPN support
 #
