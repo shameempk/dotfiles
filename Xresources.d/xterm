@@ -5,6 +5,6 @@ XTerm*eightBitInput: false
 XTerm*backarrowKey: false
 XTerm*ttyModes: erase ^?
 Xterm*saveLines: 4096
-xterm*faceName: DejaVuSansMonoForPowerline Nerd Font:size=9:antialias=false
+xterm*faceName: DejaVuSansMonoForPowerline Nerd Font:size=10:antialias=false
 xterm*font: 7x13
 xterm*VT100.Translations: #override Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
