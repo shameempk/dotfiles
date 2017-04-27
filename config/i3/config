@@ -176,8 +176,8 @@ exec --no-startup-id xautolock -locker ~/.local/bin/myi3lock -time 10 -corners -
 exec --no-startup-id nm-applet &
 
 # Binding colors with Xresources
-set_from_resource $background_c i3wm.background #000000
-set_from_resource $foreground_c i3wm.foreground #ffffff
+set_from_resource $colorbg i3wm.background #000000
+set_from_resource $colorfg i3wm.foreground #ffffff
 set_from_resource $color6 i3wm.color6 #ffffff
 set_from_resource $color7 i3wm.color7 #ffffff
 set_from_resource $color9 i3wm.color9 #ffffff
@@ -192,11 +192,11 @@ bar {
 	position bottom	
         status_command i3blocks
 	colors	{
-	background $background_c
-        statusline $foreground_c
+	background $colorbg
+        statusline $colorfg
         focused_workspace $color6 $color6 $color7
         active_workspace $color9 $color9 $color14
-        inactive_workspace $color10 $color10 $color14 
+        inactive_workspace $colorfg $colorfg $colorbg 
     	}
 
 }
