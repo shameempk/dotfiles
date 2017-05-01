@@ -10,7 +10,7 @@ if [ -e $x_color_dir/$1 ]
 	then
 		echo "File $1 found in $x_color_dir."	
 		echo "Applying color scheme now.."	
-		sed -i "s/color.d\/[^\/]*\"$/color.d\/$1\"/g" $xresources_file
+		sed -i --follow-symlinks "s/color.d\/[^\/]*\"$/color.d\/$1\"/g" $xresources_file
 		echo "Reloading xrdb..."
 		xrdb $xresources_file
 	else
