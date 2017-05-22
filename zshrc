@@ -1,7 +1,9 @@
 #Initializes the pure prompt
 autoload -U promptinit; promptinit
 prompt pure
-
+#Auto completion
+autoload -Uz compinit
+compinit
 #Hide localuser@localhost from prompt
 DEFAULT_USER="soad"
 
