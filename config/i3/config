@@ -237,6 +237,7 @@ for_window [class="SpeedCrunch"] floating enable
 
 for_window [class="QupZilla"] border pixel 0
 for_window [class="Firefox"] border pixel 0
+for_window [class="Google-chrome"] border pixel 0
 
 ### Sound ###
 ## Raise Volume
@@ -263,6 +264,7 @@ bindsym $mod+Tab exec --no-startup-id i3-sensible-terminal -e ranger
 
 #Assign specific applications to specific windows
 assign [class="Firefox"] 2
+assign [class="Google-chrome"] 2
 assign [class="QupZilla"] 2
 assign [class="Opera"] 2
 assign [class="Subl3"] 3
